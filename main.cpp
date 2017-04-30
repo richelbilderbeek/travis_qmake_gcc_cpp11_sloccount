@@ -8,5 +8,5 @@ void f() noexcept
 
 int main() 
 {
-  std::cout << f() << '\n';
+  f();
 }
