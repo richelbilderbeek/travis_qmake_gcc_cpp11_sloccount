@@ -12,7 +12,6 @@ The goal of this project is to have a clean Travis CI build, with specs:
  * C++ compiler: `gcc`
  * C++ version: `C++11`
  * Libraries: `STL` only
- * Code coverage: none
  * Source: one single file, `main.cpp`
  * SLOCcount: yes
 
