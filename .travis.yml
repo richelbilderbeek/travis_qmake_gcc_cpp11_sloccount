@@ -1,0 +1,14 @@
+language: cpp
+compiler: gcc
+dist: trusty
+
+install:
+  # SLOCcount
+  - sudo apt-get install sloccount
+
+script: 
+  - qmake
+  - make
+  - ./travis_qmake_gcc_cpp11_sloccount
+  # SLOCcount
+  - cd ..; sloccount --overhead 1 --personcost 22611 travis_qmake_gcc_cpp11_sloccount; cd travis_qmake_gcc_cpp11_sloccount
