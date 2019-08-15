@@ -1,8 +1,11 @@
 language: cpp
+dist: bionic
 compiler: gcc
-dist: trusty
 
-install:
+install: 
+  - sudo apt update -qq
+  # Boost
+  - sudo apt install -qq libboost-all-dev
   # SLOCcount
   - sudo apt-get install sloccount
 
